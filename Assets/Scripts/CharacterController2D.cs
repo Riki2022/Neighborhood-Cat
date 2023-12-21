@@ -284,7 +284,6 @@ public class CharacterController2D : MonoBehaviour
         if (!wallSlideEnable)
             return;
 
-
         if (IsWalled() && !IsGrounded())
         {
             canDoubleJump = true;
@@ -493,7 +492,7 @@ public class CharacterController2D : MonoBehaviour
     {
         // if the input is moving the player right and the player is facing left 
         //otherwise if the input is moving the player left and the player is facing right
-        if (isFacingRight && horizontal < 0f || !isFacingRight && horizontal > 0f && !isDashing)
+        if ((isFacingRight && horizontal < 0f || !isFacingRight && horizontal > 0f) && !isDashing)
         {
             // Switch the way the player is labelled as facing.
             isFacingRight = !isFacingRight;

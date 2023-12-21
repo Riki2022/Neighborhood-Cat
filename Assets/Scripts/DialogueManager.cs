@@ -2,11 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class DialogueManager : MonoBehaviour
 {
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI dialogueText;
+    public TextMeshProUGUI pressToContinueText;
 
     public Animator animator;
     public float textSpeed;
@@ -17,6 +19,8 @@ public class DialogueManager : MonoBehaviour
     void Start()
     {
         sentences = new Queue<string>();
+        string pressToContinueKeyText = CharacterController2D.playerInput.actions["Jump"].GetBindingDisplayString();
+        pressToContinueText.text = "Press " + pressToContinueKeyText + " to continue";
     }
 
     
