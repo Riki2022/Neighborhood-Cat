@@ -10,8 +10,8 @@ public class FlyingEnemy : MonoBehaviour
 
     public int maxHealth = 5;
     public float detectRange = 3;
-    public float speed = 1f;
 
+    private float speed = 1.5f;
     private Animator animator;
     private UnityEngine.Transform player;
     private bool isFlipped = false;
@@ -40,7 +40,7 @@ public class FlyingEnemy : MonoBehaviour
                 LookAtPlayer();
                 animator.SetBool("IsWalking", true);
                 Vector2 target = new Vector2(player.position.x, player.position.y);
-                this.transform.position = Vector2.MoveTowards(rb.position, target, speed * Time.fixedDeltaTime);
+                this.transform.position = Vector2.MoveTowards(rb.position, target, speed * Time.deltaTime);
             }
             else
             {

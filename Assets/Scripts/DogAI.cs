@@ -11,8 +11,8 @@ public class DogAI : MonoBehaviour
     public int maxHealth = 50;
     public float detectRange = 10f;
     public float attackRange = 1f;
-    public float speed = 1f;
 
+    private float speed = 3.5f;
     private float distanceFromPlayer;
     private float enragedSpeed;
     private Animator animator;
@@ -51,7 +51,7 @@ public class DogAI : MonoBehaviour
                 animator.SetBool("IsWalking", false);
                 animator.SetBool("IsAttacking", true);                
                 Vector2 target = new Vector2(player.position.x, rb.position.y);
-                this.transform.position = Vector2.MoveTowards(rb.position, target, speed/2 * Time.fixedDeltaTime);
+                this.transform.position = Vector2.MoveTowards(rb.position, target, speed/2 * Time.deltaTime);
             }
             else
             {
@@ -63,7 +63,7 @@ public class DogAI : MonoBehaviour
                 LookAtPlayer();
                 animator.SetBool("IsWalking", true);
                 Vector2 target = new Vector2(player.position.x, rb.position.y);
-                this.transform.position = Vector2.MoveTowards(rb.position, target, speed * Time.fixedDeltaTime);
+                this.transform.position = Vector2.MoveTowards(rb.position, target, speed * Time.deltaTime);
             }
             else
             {
@@ -152,7 +152,7 @@ public class DogAI : MonoBehaviour
     {
         animator.SetBool("IsDeath", true);
         yield return new WaitForSeconds(1.5f);
-        //Destroy(this.gameObject);
+        Destroy(this.gameObject);
     }
 
     private IEnumerator PlayerTakeDamage(Collider2D player)

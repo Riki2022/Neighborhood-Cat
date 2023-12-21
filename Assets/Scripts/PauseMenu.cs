@@ -29,6 +29,7 @@ public class PauseMenu : MonoBehaviour
 
     public void Resume()
     {
+        CharacterController2D.playerInput.actions["Move"].Enable();
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         IsPaused = false;
@@ -36,6 +37,7 @@ public class PauseMenu : MonoBehaviour
 
     private void Pause() 
     {
+        CharacterController2D.playerInput.actions["Move"].Disable();
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         IsPaused = true;

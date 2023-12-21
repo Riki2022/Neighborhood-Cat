@@ -39817,7 +39817,6 @@ MonoBehaviour:
   maxHealth: 50
   detectRange: 10
   attackRange: 1
-  speed: 0.5
 --- !u!70 &1398811654
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -49690,6 +49689,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 816109921237121535, guid: 0e55045acde57a840bf3e50aa1b60193, type: 3}
+      propertyPath: m_RebindOverlay
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1003888444795960883, guid: 0e55045acde57a840bf3e50aa1b60193, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -49818,6 +49821,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4817722724816760326, guid: 0e55045acde57a840bf3e50aa1b60193, type: 3}
+      propertyPath: m_RebindOverlay
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5245225228261139150, guid: 0e55045acde57a840bf3e50aa1b60193, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0
@@ -49845,6 +49852,10 @@ PrefabInstance:
     - target: {fileID: 5245225228261139150, guid: 0e55045acde57a840bf3e50aa1b60193, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 66.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257496284657595864, guid: 0e55045acde57a840bf3e50aa1b60193, type: 3}
+      propertyPath: m_RebindOverlay
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5563039810084303825, guid: 0e55045acde57a840bf3e50aa1b60193, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
@@ -49877,6 +49888,10 @@ PrefabInstance:
     - target: {fileID: 5783980304834763782, guid: 0e55045acde57a840bf3e50aa1b60193, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5906964943573354630, guid: 0e55045acde57a840bf3e50aa1b60193, type: 3}
+      propertyPath: m_RebindOverlay
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7074948784381588478, guid: 0e55045acde57a840bf3e50aa1b60193, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -49922,9 +49937,21 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 47.8
       objectReference: {fileID: 0}
+    - target: {fileID: 8217096355218247145, guid: 0e55045acde57a840bf3e50aa1b60193, type: 3}
+      propertyPath: m_RebindOverlay
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311409037126392583, guid: 0e55045acde57a840bf3e50aa1b60193, type: 3}
+      propertyPath: m_RebindOverlay
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8408206327786640304, guid: 0e55045acde57a840bf3e50aa1b60193, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
       value: OnAudioSelect
+      objectReference: {fileID: 0}
+    - target: {fileID: 8411847421233052387, guid: 0e55045acde57a840bf3e50aa1b60193, type: 3}
+      propertyPath: m_RebindOverlay
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8952510835395219446, guid: 0e55045acde57a840bf3e50aa1b60193, type: 3}
       propertyPath: m_AnchorMax.x
